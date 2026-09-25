@@ -1,0 +1,22 @@
+{
+  "name": "silena Lashes|Estudio de pestaña",
+  "short_name": "silena",
+  "description": "Uñas y belleza - Tu espacio de cuidado personal",
+  "start_url": "/silena-lashes-estudio-de-pestana/",
+  "scope": "/silena-lashes-estudio-de-pestana/",
+  "display": "standalone",
+  "background_color": "#ec4899",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/silena-lashes-estudio-de-pestana/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/silena-lashes-estudio-de-pestana/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

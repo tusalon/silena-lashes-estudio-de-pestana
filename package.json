@@ -1,0 +1,45 @@
+{
+  "name": "exoticnailsbyyuli",
+  "version": "1.0.0",
+  "description": "APK Android para Exotic Nails by Yuly",
+  "main": "admin-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cap:prepare": "powershell -ExecutionPolicy Bypass -File scripts/prepare-capacitor.ps1",
+    "vendor:sync": "powershell -ExecutionPolicy Bypass -File scripts/sync-vendor-assets.ps1",
+    "android:add": "npm run cap:prepare && npx cap add android",
+    "android:sync": "npm run cap:prepare && npx cap sync android && npm run android:icons",
+    "android:open": "npm run android:sync && npx cap open android",
+    "apk:debug": "npm run android:sync && powershell -ExecutionPolicy Bypass -File scripts/build-apk-debug.ps1",
+    "android:icons": "powershell -ExecutionPolicy Bypass -File scripts/apply-android-icons.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusalon/exoticnailsbyyuly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tusalon/exoticnailsbyyuly/issues"
+  },
+  "homepage": "https://github.com/tusalon/exoticnailsbyyuly#readme",
+  "devDependencies": {
+    "@babel/standalone": "^7.29.7",
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/filesystem": "^8.0.0",
+    "@capacitor/share": "^8.0.0",
+    "@tailwindcss/browser": "^4.3.0",
+    "bcryptjs": "^3.0.3",
+    "lucide-static": "^1.17.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "supabase": "^2.76.15"
+  },
+  "dependencies": {
+    "@capacitor/push-notifications": "^8.1.1"
+  }
+}
